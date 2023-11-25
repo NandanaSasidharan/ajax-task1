@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar" style="background-color: pink">
+            <div class="container">
+              <a class="navbar-brand" href="#" style="font-size:40px;font-family:italic;">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABj1BMVEX///8AAAD4fAr29vb8/////v/8/Pz///34+Pj09PSLi4v20bL6cwCgoKD//f/5ewzGxsb5Xhv5Zhjf39/s7Oz6VyAuLi76bRWRkZHOzs5eXl75Yhr6cRG5ubnU1NR6enr7UCP7QC1EREROTk5mZmb7RyiZmZnc3NyCgoIbGxusrKyysrL2zLT7NTT+8e78Iz45OTn7OjL0x8IoKChubm70wbf9TAD5XAD4ZQD6SxrvQETxcGD46OH6MzX6Py75MyL1paT1wMr7AC7wTmPqRjjoUy3xUyf108jpamjxa0vwqJT+//TrRgD5QgDohGHqWiXiZUjoemHyr5bqlXv1uavzzdL0wLzwkof6583pFy76Gh3pJhbuoZv5NhDniTj3zKDwrXrqcHnsRkfuf3v44M/zhjD01anukkT33sDnVkvpnFDpk5fwh4ntd3nug3H74+jjHTv9CCTqqa7pVlnjUmrzuIf2cjnscx/8GUf6f0PrcInsnGrvilXqQDbve1PdbjrnRCP0UUjjUhjrME7nsL3fgLyiAAAQDklEQVR4nO2cj0Pa1hbHk3JzE3yCdEAnVH4oCKgVxepWFKFl/miLlrZWW7Vss3PvbbNbq918697o7LY//J1zbxISfnTde9NEdz+rGkgC95tz7vlxA5MkgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCM47qtMDOGVUpUaIQpSLq5MQSQWJF1nh3J363RpRFacHcmqsrhXD6/dqEnF6IKfG3UYynPzoTklS/erFNOSj9XAyvFKs7xMQeCEnY/4+SCyGi+FrxE/8To/mNCC1B0Xw02Rx7SHxX0gbUqJurCeB8Ecb6oUMN5Dt1YcNVBheu+f0YE4FVSE19dpakUncd3o0pwFRIEuQ/Tpace2a06M5DbBiU1RSWgGJ64+cHs1poEB0gVRI7kNEXX8oXcykL2GqfwMzcX0DKpsLGU+xR4SsmCzeky5oXQP9k7SBCh+oF7QfRrvdRYVvsPx2ejT/H4pKCYGOl2BwgQfwDwsZVSJM4UqthkZU2RE4IYkdCc2tb7SBz0J95HhpS/0kv8koEdYvEXV1a25ua2vuMShMrsyZXOvCP97FV09qGJWdDlSEHG3vMHafElBItIUGZ3R0FIxYXF9f/8jgY4MbBkND/b0Y6O//9DO8Yg57OdncWZxEFgu7q3jFn1ZGh8vlUQbW3ythg8vAVc6HnCHGAHKpGwP9nzsfqcjMzuLiJPybbO5s4Vx8XCkUhkcNkqzJaCkEjR8gLYEDLbpo7P+MUKcV5l8eLiKFynyJ+ClZBf+sVAyFRU7SKtGiEUWiO/aSOHDpy5rTNqSktDePPPv2BcxDaOtXv1iw8Aa5s2axoq6wZcbeAoGhJ05XfQrEGj+Ca6QwDUFkR+iHMvy+VWG7FYf6eyoc6H/idCyFfOVXKcVkWINQqmDwI1h5cyToMyRKyX6xQ6E12vRWOOC4QhMV5iBzKNUGqwWIWrNMxMs2Iw69y4gwD51OFi2wsOm5j8ys22LN+yq81P8DcZNCNd+D0rXlopE0OuLpu5LiAIRSp7OFCSGl24sFoFzGH+Dk5KR8whJicr240qbQElDfoRDSoWs6aFX1PztkxQ1XWR4GbHnfmvht0Wbow17BBkxI3OOlKpRvCFdY4Aq5yGRyNIlemuw0ohlPO1MibA985nxZ2oLk56umwgLasAwKLQVq+J2VjZ747Sb8FE3ommxBpM1Xk7u7lcpui4puxOLaWhF+rJVNF4lDbQoHBv6JedU1ChU/qb14USqV8Efn8S6TeH+VPdrfWOsMNlaF/W0KP61hPnWFl5rDwDvcrWclcrMBApdqensvbYT1yWg1o81RrYkRTOiWOMpWMPim0irYVIUopUp5tPEUKlewMIT91bVkL0e1KeQC/1VzjUJWfevbUIPyRRtIH9BnVCDcfMceQuomj9as8dRmxKEhS3HDc+FX7pmC5qqSIlmnDdQAX0NAHa5sseeIur/cyorh7qVNS+HANzW3JAroEA/29vYO8tAbktXne98iXyC3y2jC4eHGne+QN8VWZWMm/m4pAyVCU6G6I8iA2V68rFanqtXf8oTcqk5yKoyCWdrwTr9HaWPpo0yF/d9ILpmE0PYeVKeQwyMivWJJH1dteOIv2Kq3pFWivVe0F6hgwUtPnFZmAK55VP0RFVZ/J2RPV2hK1AvU4S71KRN5taOT4umi/3PXRBnJT/KfgBGr1e/9qvpiu1o9PDzcOdTd1KBrCd6lBm8VqO5p7RH11sHNm7dwvYbkj27aeYrcXKh0cVRbUrRlRTShK6KMgR8zRc3vZ7cn2lai8BEhtccNm8Jk51T8wBZPn7hLIYZ13qkqCk/2bHj6hipBrs+3GbEtorZL/JxQV3kpFm1+KMwUEOT3t6o2vJ+PUKJqu3q0aVMYbmv4ed6/VCOOL+ZbUSg4qHGHjN9Bw5uG+DFT4xD1oNGWMwyB4Y5oAyp/kKhb6hnM+OiZm7dazGzdyhMF6m51c2uGM/ddpceaBii8Wm9r+Ps/rTmtygYUNfnvt7Go0Tk8rG5vwTwqPZvcMagUOjM/l1g/Pn59XLeuS934t7syBfgoOZia+pElfZNq3k++PTTWpYbbMr91Kh4f1+vHr+uXTTe98aXL4ihEUPLT1I+o8UdD5uLU4Qvif4U3FRd1lWXb6ltLYf11/TUY8fjqB1zijRv/qamO31DrYHPbbsJq9TZ46dEh3lhk+nQnbbutiNSZDY+PWUD9+MbHP3/ltJiukFs/fYJ8/4kOdFKQ+7duP2MKX339ttlcMlk2qAN33ty/8wsAIo9f//zwSc3pzyV0x/jUk6YZ7gXlDbraJhbikzPEWPQ0agHzAbT+tbyqenAJAFdC/K5Kgxbw3hqo8Ho0CT9/gh/JYOk/v43TsJnvFhup5sHrQTSAsDwKCZW69ANUClx8GLCGChXqhV8wbo9H9ZO9xfn5+ULzUSmfL73IW9YZrdsMjeDpRIHIBad6JNcFG+qFYaFC+OPRKAiE/yjZnJ9fbM6XdwrNZrm51ITpeAIF6snyycnyykpxZeXXevjXej18GaLN3RKpaV6Kvg6v4HFaUAcgz4tGoB4YoAQj9HqoVyXawdSzqSaobDbfvi3Az9ISBNTlE4gzJzzcJEEcZMX68dXjfTgNjKfxy+O0ojYoGk7yojwNxgZawWc11eMhz3eezT+bbM6/RZHlpeYSJEaIp6OjK8vLK8mVlWR4uR5GlfX6LyoopOgLGjOmq8BwITGFGD8oDtKjqeiy0tF2E2bi/NvC4tLbMqocHl5eWkKFd06SoBKUognRjnMEFYIzeDxuE4iBkU8+/AsKvSCRTymNlA5eLYKb7hQKzQpIrDR2T05OGo0Gm4grRfi19ivMR8j795gNNZBI4UU0d6n0cMek3EvRlqiV4szyknxpc2Z1c3V1ZrUX+/cg2NTvgTj2CvBSktfrLk+lXiYR3RUuPzMEGBIDfw02CF/LgL5RY6vjGrttQ8ynSenNZfBSUMhms4fFKW/IVQr1WAN/NP0RzkWMOZjQtc2j58jj54+tbGzAP8adOhTh4YeQE1WeD6nkCXmd1vRe4AJH/vnLncqObXWxUcHPZxaLDbYWvl4MJ6EX/rVEnP8k4p9G8UtHLyf5GnGhYH6MocwbDbPFwEbqo4fuanzfEwIJcXHKXAdHhcN6I8U1jqI8/jUw19wt/HMcHGJLrNuQNfzopdZmkTtq/eE5/Vrt5jZYEBROPrvdYmEB/i08WCiDDe8/ePDgzb2NuTypubSveBfQQ/3GLbhdajcQIdfeogWXO/acJwg54jfeFhf32vao5Okud9Jlt9XYfwJFIZ/oS1OL1ZJtFyEzDX0urs+cZyO+MNbepqqbth2Uvh0tlFHgcOPR+VWoGPdOpzoUkpmKsfrWOMdfUVSkvaqxwLidt+97aiqs7J9fGxJpz1xBfd6262bDKGwWHP9i0/+OIh0YCn/L23Md2dzRa7fd/XP8nX0i5V9yC74s2WWoqvp1BRVWdueISxeB3wcVTPVbtbq9vZdvv+FJSH4BirfdhdI59lH2tXXoDH+/led3TK2ofqKuzm2V1M5d5wm/eVuYqoq9b1DZPWL2dRvl/IZSLGr8CgpAOXYdfhSs4hf3CVHOZ9OE6F/MR33t/9comH1sD1HwY6gOjU8g+PuQjbjvPtIfQ0Mpua/nTmr8QmKyPNvlmNah9sP1PdQ8gFqPP0tkOdPrbak0eGWw9XAMjuxCyNc3GOCHZ4NZvvgbDGZDxv7seF9fJmC+ZCgIeKWz0xqU5UDPnX2ybFmZiHY9clxGpoM4Ytl4sTHZuBqBaZnj0zXl+MORibPSCL4X6rXPK9s8ONHtyJguQM7CgE2FV5gido7JCJ/Ffcbj3F8n4p3AG3Y8Z5l5hqYQuqzM9tmv/HVZHutLwYDHJalNIRw4i1KuzM6OsL+a/obmNTkTUnK66/Pe6NgY+Nr1MQaMn4JgytTHQxaVMNKIJPlQWbsNKfPg6xF8IogXYRbPA4VRyRMYk3tHuL8UKtvDh+YbkcfSYLlENJ2W5VSa42Mxkd8kG5TleOsEmb9AULLNQ65QQ8N5JX5dojI/jymkUkbucWn/akL2QBOAKxsfxPhCWRDqMfFi+rbuh2Yw5gYFptk8nIDHQeM8uJZyQtIVsoDTJfecAvZAE+OXmUnAyzzWJdyBLab13IbzKiTrI5fYiXI6l0gkcmNMITpB6xXAamPcS0di4zm5zXlOjT5QYRLk1vHqdk11DXcjundpUuI6/o2jxBRPKrIFnyWiSsaBXmukOZt731HmMgwKkqZxI8OzYKjljVb65BFjI8iGyCReYZm+TeF1HmF1gm0KI2eTD62+EuQD8umRZKR7poSjJnBsOXOKhUAJOCCPNOk+ZKxlQ1NG1lQ4NpKK+rSzyfi2igZie5AGRrA+gTfHXN1lCBRjC5W8KVMglTRMBRj7zUhzxZiHUbNwxSsnUzPSnBW2QMP9JxVj5fKgPM19tj3Fo/f6YsbMk3htneJRpK2mwXRovjy9zvPDGSuExNASAPEtEqTGdmyWTThKg+0njbfyBdgvhxWp7oFtCj1YsBpXIqHvPGOFUSNsICDXw7sdLQpzLS1fwWe97VVdBCbooHFdYpg7eObzdChkjnmFFWfetKynjjNWeAXeVSeO6d5nDDvOhhLBSJm2uCk0P5BDBlvXZRCDTF+CDb9TIa9Lp3M5LGjkMRZvz1ghzI1EJJuNQAZOs0d9kUDmupzGUguzQHpETtmmYQTFByxjNJojvVSwK6Q03UofY7zoO2OFPvP9Z8HJQny4UR4PeSfnsx1PWejosyRKTdcQ4Hv5X0t/ODGmvwFvpSm+ako6K2DOxQehxsrEshp3xYDPF2gF14gvplmWJSRW7sTphLWihJfIJHITrPej2L2zOlvfYE/C/kRfwPw0NPT4PRtSN8A6+j8sKN31Qb0/BZU82eA5Hv8fQy+0uovExTZUfGQEy7Q4ywdUm42mEsw1g9FUapYXcNkAuwYTXqjoJozzInCCD/cHUtEUlDHBkWgaH2ZHoqney5VOMKt5sMyKYB8FHSNsZzFB02kI8Vl9hZDns8y0+QwQAIUZPHOCZ9P4uBSabb2Qi4hEWWqLMOPEWZoehIGPx/gwwZ6hhI/1j5mJtJQ1O9xAJhjModFivngEyrN4xhvDJYJ4Lh5x2ce849NYPnKFMearE7p5YrkcriMmJiLMiIPBWC5kKozM+nxRpjA3Po72npbHsa2IpyfGO7oTB8EpF8R1JaaQBmfRw6Iw4ABY0+NNQWXiTY2PR9EdB4OSL9GyIV4GlGJ6Kb+Z4T4vTYUC2K1HwOlgXIODHm8fK2FmfR7Nh3ty4KIh1sqCTIvCCe7OEpgMakAp7pNSKDjSF8y66+sWoQTr/UKZDBt8IJEI8CXdWCLBfRZ/4VYEy0vTAYOwhfNPCmYyGdgTiktePApeKOMmL/2b4ypfEwgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQ/BH/BeKC8aymHOheAAAAAElFTkSuQmCC" alt="Bootstrap" width="100" height="100">
+               Let's Shop</a>
+        
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 20px;">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Login</a>
+                      </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page">Cart</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page">Profile</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-info" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+          </nav>
+               </header>
+               <div class="container-fluid row row-cols-lg-4 row-cols-xl-4" id="result" >
+
+               </div>
+               <footer>
+                <div class="text-center p-5 m-5" style="background-color:pink;">
+                  © 2020 Copyright:
+                  <a class="text-white" href="#">shop</a>
+                </div>
+               </footer>
+  
+               <script>
+                 fetch("https://dummyjson.com/carts")
+    .then(data=>data.json()).then(data=>{console.log(data),displayCart(data)})
+
+    function displayCart(data){
+        for(i of data.carts){
+            for(j of i.products){
+                htmlData=`<div class="col mt-4 ">
+                          <div class="card shadow mx-auto border-0 rounded-2" style="width: 18rem;background-color:pink">
+                            <img src="${j.thumbnail}" class="card-img-top img-fluid rounded-3 w-75 mx-auto mt-2 "  style="max-height:200px; max-width=200px; min-height:200px; object-fit:contain; " alt="...">
+                            <div class="card-body fw-medium text-center ">
+                      <h5 class="card-title text-darck " style="height:3rem;font-size:25px;font-family:italic;">${j.title}</h5>
+                      <p class="card-text" style="font-size:15px;font-family:italic;">Product Id -${j.id} </p>
+                      <p class="card-text" style="font-size:15px;font-family:italic;">Price -Rs ${j.price}/- </p>
+                     <p class="card-text" style="font-size:15px;font-family:italic;">Qty -${j.quantity} </p>
+                      <p class="card-text" style="font-size:15px;font-family:italic;">Total- Rs ${j.total}/-</p>
+                      <p class="card-text" style="font-size:15px;font-family:italic;">Discount percentage -${j.discountPercentage}% </p>
+                     <p class="card-text text-primary fs-5" style="font-size:20px;font-family:italic;">Discount price - Rs ${j.discountedPrice}/- </p>
+                     <a href="#" class="btn btn-info fw-medium">Add to Cart</a>
+                     <a href="#" class="btn btn-success fw-medium">Buy Now</a>
+                     
+                    </div>
+                  </div>            
+            </div>`
+            result.innerHTML+=htmlData;
+            }
+        }
+    }
+
+</script>
+                  
+                   
+</body>
+</html>
